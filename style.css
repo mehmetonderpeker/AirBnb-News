@@ -1,0 +1,108 @@
+/* Genel Ayarlar ve Bootstrap Overrides */
+.container, .container-md, .container-sm, .container-lg, .container-xl, .container-xxl {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Navbar */
+.nav-link {
+  color: #000;
+}
+
+.nav-link:hover {
+  background-color: #808080;
+}
+
+.dropdown-item:hover {
+  text-decoration: underline;
+}
+
+/* Main Section and Articles */
+.card-img-top, .featurette-image {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Background Styles for Sections */
+.bg-dark {
+  background-color: #000 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+/* Categories & Articles */
+#categories {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.articles {
+  padding-bottom: 20px;
+}
+
+/* Text Styling */
+a, .text-dark {
+  color: #000 !important;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.text-muted {
+  color: #808080 !important;
+}
+
+/* Buttons */
+.btn-danger {
+  margin-top: 20px;
+}
+
+.btn-outline-secondary {
+  border-color: #808080;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+.btn-outline-secondary:hover {
+  border-width: 2px;
+  border-color: #000;
+}
+
+/* Footer */
+.footer {
+  background-color: #f2f2f2;
+}
+
+.footer a {
+  color: #000;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .text-muted {
+  color: #808080 !important;
+}
+
+.footer .nav-link {
+  padding: 5px 0; /* Ayarlar footer linkler için */
+}
+
+/* Responsive and Specific Adjustments */
+@media (min-width: 768px) {
+  /* Daha büyük ekranlar için ayarlar */
+}
+
+/* FontAwesome Icons */
+.fa-brands {
+  padding: 6px;
+}
