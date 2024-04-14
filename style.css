@@ -76,6 +76,10 @@ a:hover {
   border-color: #000;
 }
 
+.btn-group-wrap {
+  flex-wrap: wrap;
+}
+
 /* Footer */
 .footer {
   background-color: #f2f2f2;

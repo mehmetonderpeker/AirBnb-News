@@ -64,9 +64,16 @@
 <!-- END NAVBAR -->
 
 <!-- MAIN ARTICLE -->
-<section class="container-xl">
+<section class="container-fluid">
   <div class="row g-3 align-items-center">
-    <article class="col-md-4">
+    <!-- Image block with order change and full-width on smaller screens -->
+    <aside class="col-md-8 col-12 order-md-1 order-2">
+      <a href="#">
+        <img src="./images/2.jpg" alt="" class="img-fluid">
+      </a>
+    </aside>
+    <!-- Text block with order change and full-width on smaller screens -->
+    <article class="col-md-4 col-12 order-md-2 order-1">
       <div class="p-3">
         <time class="text-muted" datetime="2023-02-12">March 5, 2024</time>
         <h2 class="h5">
@@ -75,23 +82,18 @@
         <a href="#" class="btn btn-danger mt-2">Read more</a>
       </div>
     </article>
-    <aside class="col-md-8">
-      <a href="#">
-        <img src="./images/2.jpg" alt="" class="img-fluid">
-      </a>
-    </aside>
   </div>
 </section>
 <!-- END MAIN ARTICLE -->
 
 <!-- LATEST NEWS -->
-<section class="container-xl mt-4">
+<section class="container-fluid">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-12">
       <h2 class="mb-4">Latest news</h2>
       <div class="row">
         <!-- News Items -->
-        <div class="col-lg-6 d-flex align-items-stretch">
+        <div class="col-lg-3 d-flex align-items-stretch">
           <div class="card mb-4">
             <img src="./images/3.jpeg" class="card-img-top" alt="">
             <div class="card-body">
@@ -100,7 +102,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 d-flex align-items-stretch">
+        <div class="col-lg-3 d-flex align-items-stretch">
           <div class="card mb-4">
             <img src="./images/4.jpeg" class="card-img-top" alt="">
             <div class="card-body">
@@ -109,7 +111,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 d-flex align-items-stretch">
+        <div class="col-lg-3 d-flex align-items-stretch">
           <div class="card mb-4">
             <img src="./images/5.jpg" class="card-img-top" alt="News Image">
             <div class="card-body">
@@ -118,7 +120,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 d-flex align-items-stretch">
+        <div class="col-lg-3 d-flex align-items-stretch">
           <div class="card mb-4">
             <img src="./images/6.jpeg" class="card-img-top" alt="News Image">
             <div class="card-body">
@@ -129,16 +131,6 @@
         </div>
       </div>
     </div>
-    <aside class="col-md-4">
-      <h2 class="mb-4">Follow us</h2>
-      <p>Get the latest news and travel inspiration</p>
-      <div class="social-icons">
-        <a href="#" class="me-2"><i class="fab fa-twitter fa-2x"></i></a>
-        <a href="#" class="me-2"><i class="fab fa-instagram fa-2x"></i></a>
-        <a href="#" class="me-2"><i class="fab fa-linkedin-in fa-2x"></i></a>
-        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-      </div>
-    </aside>
   </div>
 </section>
 <!-- END LATEST NEWS -->
@@ -146,7 +138,7 @@
 <!-- SCROLL SECTION -->
 <section class="position-relative">
   <div class="bg-dark"></div> <!-- Siyah arkaplanı temsil eder -->
-  <div class="container-xl text-dark py-5">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <h2 class="mb-3">The financial benefits of hosting</h2>
@@ -187,15 +179,31 @@
   </div>
 </section>
 <!-- END OF SCROLL SECTION -->
+<!-- FOLLOW US SECTION -->
+<section class="container-fluid">
+  <div class="row">
+    <aside class="col-md-4">
+      <h2 class="mb-4">Follow us</h2>
+      <p>Get the latest news and travel inspiration</p>
+      <div class="social-icons">
+        <a href="#" class="me-2"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#" class="me-2"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#" class="me-2"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+      </div>
+    </aside>
+  </div>
+</section>
+<!-- END FOLLOW US SECTION -->
 
 <!-- CATEGORIES SECTION -->
-<section class="container-xl my-4">
+<section class="container-fluid">
   <div class="row">
     <div class="col-12 mb-3">
       <h2>Categories</h2>
     </div>
     <div class="col-12">
-      <div class="btn-group" role="group" aria-label="Basic example">
+      <div class="btn-group btn-group-wrap" role="group" aria-label="Basic example">
         <button type="button" class="btn btn-outline-primary font-weight-bold">All</button>
         <button type="button" class="btn btn-outline-primary">Company</button>
         <button type="button" class="btn btn-outline-primary">Stays</button>
@@ -210,7 +218,7 @@
 <!-- END OF CATEGORIES SECTION -->
 
 <!-- BOTTOM ARTICLES SECTION -->
-<section class="container-xl my-5">
+<section class="container-fluid">
   <div class="row g-4">
     <!-- Article 1 -->
     <div class="col-md-6 col-lg-3">
@@ -222,8 +230,8 @@
     </div>
     <!-- Article 2 -->
     <div class="col-md-6 col-lg-3">
-      <a href="#" class="d-block bg-cover rounded mb-2" style="background-image: url('./images/article2.jpg'); height: 200px;"></a>
       <a href="#">
+        <img src="./images/article2.jpg" class="img-fluid mb-2 rounded" alt="">
         <h5>Airbnb data reveals people are looking for travel away from hotspots</h5>
       </a>
       <small class="text-muted">February 28, 2024</small>
@@ -254,8 +262,8 @@
     </div>
     <!-- Article 6 -->
     <div class="col-md-6 col-lg-3">
-      <a href="#" class="d-block rounded mb-2" style="background-image: url('./images/article6.jpeg'); height: 200px;"></a>
       <a href="#">
+        <img src="./images/article6.jpeg" class="img-fluid mb-2 rounded" alt="">
         <h5>Experience the hottest design trends of 2024 in these stylish stays</h5>
       </a>
       <small class="text-muted">February 13, 2024</small>
@@ -287,7 +295,7 @@
 
 <!-- FOOTER LINKS SECTION -->
 <footer class="bg-light pt-4">
-  <div class="container-xl">
+  <div class="container-fluid">
       <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
           <div class="col">
               <h5 class="footer-heading">Support</h5>
