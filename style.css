@@ -110,3 +110,19 @@ a:hover {
 .fa-brands {
   padding: 6px;
 }
+
+@media (max-width: 767px) { /* Adjust breakpoint if necessary */
+  .article-container {
+    display: flex;
+    align-items: center;
+  }
+  .article-image {
+    width: 30%; /* Adjust image size as necessary */
+    margin-right: 10px;
+  }
+  .article-container > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+}
